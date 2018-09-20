@@ -1,1 +1,1 @@
-"# TalkingAnime" 
+# TalkingAnime
