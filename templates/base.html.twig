@@ -16,22 +16,23 @@
 
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="{{ path('home') }}">Accueil <span class="sr-only">(current)</span></a>
+                {% set route = app.request.get('_route') %}
+                    <li class="nav-item {{ 'home' in route ? 'active' }}">
+                        <a class="nav-link" href="{{ path('home') }}">Accueil</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ 'animes' in route ? 'active' }}">
                         <a class="nav-link" href="{{ path('animes') }}">Animes</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ 'mangas' in route ? 'active' }}">
                         <a class="nav-link" href="{{ path('mangas') }}">Mangas</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ 'characters' in route ? 'active' }}">
                         <a class="nav-link" href="{{ path('characters') }}">Personnages</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ 'blog' in route ? 'active' }}">
                         <a class="nav-link" href="{{ path('blog') }}">Blog</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ 'about' in route ? 'active' }}">
                         <a class="nav-link" href="{{ path('about') }}">A Propos</a>
                     </li>
                 </ul>
