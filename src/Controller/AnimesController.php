@@ -16,4 +16,13 @@ class AnimesController extends AbstractController
             'controller_name' => 'AnimesController',
         ]);
     }
+
+    /**
+     * @Route("/animes/12", name="animes_detail")
+     */
+
+    public function show()
+    {
+        return $this->render('animes/detail.html.twig');
+    }
 }
