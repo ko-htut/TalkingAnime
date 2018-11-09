@@ -2,9 +2,13 @@ body {
     overflow-x: hidden;
 }
 
+#menu {
+    background-color: transparent !important;
+}
+
 .hero {
     width: 100%;
-    position: relative;
-    margin-top: -179px;
+    position: absolute;
+    top: 0;
     z-index: -1;
 }

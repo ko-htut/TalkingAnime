@@ -1,11 +1,15 @@
 {% extends 'base.html.twig' %}
-{% block body %}
-    <div class="container">
-        <h1 class="display-1">TalkingAnime</h1>
-        <h2>Le site qui parle d'animes et de mangas</h2>
-    </div>
+
+{% block hero %}
     <video class="hero" autoplay loop muted>
         <source src="https://cdn.anilist.co/hero.webm" type="video/webm">
         <source src="https://cdn.anilist.co/hero.mp4" type="video/mp4">
     </video>
+{% endblock hero %}
+
+{% block body %}
+    <div class="mt-5">
+        <h1 class="display-1">TalkingAnime</h1>
+        <h2>Le site qui parle d'animes et de mangas</h2>
+    </div>
 {% endblock body %}
